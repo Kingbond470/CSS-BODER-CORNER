@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<title>Border And Corner Of Shape</title>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+	<h1><code><a href="http://dev.w3.org/csswg/css4-background/#corner-shape" target="_blank">DID YOU MISS ME?</a></code></h1>
+	<h2 id="play"><span>Let's Play !</span></h2>
+
+	<div id="fallback">
+		<svg><text y="50%" x="50%" dy=".3em">WORLD</text></svg>
+	</div>
+		<svg width="400" height="300" id="simulated">
+		<path /> <text y="50%" x="50%" dy=".3em">GAMING WORLD</text>
+		</svg>
+	<div id="fallback">
+		<svg><text y="50%" x="50%" dy=".3em">ANIME WORLD</text></svg>
+	</div>
+
+	<section id="code">
+		<div>
+			<label>
+				<a href="http://dev.w3.org/csswg/css-backgrounds-4/#corner-shaping" target="_blank">corner-shape</a>: 
+				<select id="corner-shape" tabindex="1">
+					<option>curve</option>
+					<option>bevel</option>
+					<option selected>scoop</option>
+					<option>notch</option>
+				</select>
+			</label>
+			<label>
+					<a href="http://dev.w3.org/csswg/css-backgrounds-4/#corner-sizing" target="_blank">border-radius</a>:
+					<input id="border-radius" value="10% / 30px" tabindex="1" />
+			</label>
+			<label>
+				<a href="http://www.w3.org/TR/css3-box/#the-lsquo0">width</a>:
+				<input id="width" value="400px" pattern="\d*\.?\d+(px|r?em|ex|v(w|h|min|max)|ch|mm|cm|in|pt|pc)" tabindex="1" target="_blank" /></label>
+			<label>
+				<a href="http://www.w3.org/TR/css3-box/#the-lsquo0">height</a>:
+				<input id="height" value="300px" pattern="\d*\.?\d+(px|r?em|ex|v(w|h|min|max)|ch|mm|cm|in|pt|pc)" tabindex="1" target="_blank" /></label>
+		</div>
+	</section>
+
+	<p><strong>Tip:</strong> Use the keyboard arrow keys to increment/decrement the lengths. Shift for bigger increments, Alt for smaller.</p>
+
+	<footer>
+		<p>
+		</p>
+	</footer>
+
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="Mausam" data-count="vertical">Tweet It</a>
+	<script>!function(d,s,id)
+				{
+					var js,fjs=d.getElementsByTagName(s)[0];
+					if(!d.getElementById(id))
+						{
+						js=d.createElement(s);
+						js.id=id;js.src="//platform.twitter.com/widgets.js";
+						fjs.parentNode.insertBefore(js,fjs);
+						}
+				}
+			(document,"script","twitter-wjs");
+	</script>
+	</a>
+
+	<script>var _gaq = [['_setAccount', 'UA-25106441-4'],['_trackPageview']];</script>
+	<script src="http://www.google-analytics.com/ga.js" async></script>
+
+	<script src="increment.js"></script>
+	<script src="shape.js"></script>
+
+</body>
+</html>
